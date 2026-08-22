@@ -1,0 +1,187 @@
+<!DOCTYPE html> <!-- Declara que el documento es HTML5 -->
+<html lang="es" class="principal"> <!-- Etiqueta raíz del documento, idioma español -->
+<head> <!-- Inicio de la cabecera (metadatos, no visible) -->
+  <meta charset="utf-8"> <!-- Define la codificación de caracteres UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a dispositivos móviles -->
+  <meta name="description" content="Capas de internet: web superficial, deep web y dark web"> <!-- Describir el contenido de la página para los buscadores -->
+  <meta name="keywords" content="deep web, dark web, internet, ciberseguridad, html"> <!-- Palabras clave relacionadas con la página -->
+  <meta name="author" content="Sergio Suarez y Julian Estupinan"> <!-- Indica el autor de la página de igual forma no visible -->
+  <title>Deep Web</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="estilo.css"> <!-- Enlaza la hoja de estilos externa -->
+</head> <!-- Fin de la cabecera -->
+
+
+
+<body> <!-- Inicio del contenido visible de la página -->
+  <header class = "cabecera"> <!-- Cabecera visual de la página -->
+    <div class="logo"> <!-- Contenedor del logo -->
+      <img src="recursos/logo.jpg" alt="Logo de la página" width="210"> <!-- Imagen del logo, con texto alternativo y tamaño definido -->
+    </div> <!-- Fin del contenedor del logo -->
+    <div class="titulo_principal"> <!-- Contenedor del título y subtítulo -->
+      <h1>Las capas de Internet</h1> <!-- Título principal -->
+      <h3>Descripción general de la Deep Web y la Dark Web</h3> <!-- Subtítulo -->
+    </div>
+  </header> <!-- Fin de la cabecera visual -->
+
+  <nav> <!-- Menú de navegación interna de la página -->
+    <div class="menu"> <!-- Contenedor del menú -->
+      <p>Enlaces a las secciones de esta página:</p> <!-- Párrafo introductorio al menú -->
+    </div> 
+    <a href="Principal.html">Inicio</a> <!-- Enlace que lleva al inicio de la página, se mantiene igual -->
+    <a href="#funciona">Cómo funciona la Deep Web</a> <!-- Enlace ancla al nuevo artículo 1 -->
+    <a href="#que-es?">Qué es la Deep Web</a> <!-- Enlace ancla al nuevo artículo 2 -->
+    <a href="#entrar">Cómo entrar a la Deep Web</a> <!-- Enlace ancla al nuevo artículo 3 -->
+    <a href="#caracteristicas">Características de la Deep Web</a> <!-- Enlace ancla al nuevo artículo 4 -->
+    <a href="#tabla">Tabla comparativa</a> <!-- Enlace ancla a la tabla, se mantiene igual -->
+    <a href="#video">Video explicativo</a> <!-- Enlace al video explicativo -->
+  </nav> <!-- Fin del menú de navegación -->
+
+  <main> <!-- Contenido principal de la página -->
+    <section id = "contenido-pagina"> <!-- Sección que agrupa los artículos informativos con id -->
+      <article id="intro"> <!-- Artículo de introducción, destino del enlace "Inicio", se mantiene igual -->
+        <h3>¿Qué vas a encontrar en esta página?</h3> <!-- Título de la introducción -->
+        <p>Esta página explica de forma general <strong>qué es la Deep Web</strong>, cómo 
+        funciona, cómo se accede a ella y cuáles son sus características principales, además 
+        de <span>una tabla comparativa</span> con la Web superficial y la Dark Web. En el menú 
+        lateral (<em>aside</em>) puedes acceder a una representación gráfica en forma de 
+        iceberg de estas capas, y a un formulario de ejemplo para practicar cómo funciona una 
+        inscripción en línea.</p> <!-- Párrafo de bienvenida -->
+
+        <div class="imagen-intro"> <!-- Contenedor de la imagen de introducción -->
+          <figure> <!-- Agrupa la imagen y su leyenda -->
+            <img src="recursos/iamgen1_Deepweb.jfif" alt="Deep Web" width="300"> <!-- Imagen representativa, con texto alternativo y tamaño definido -->
+            <figcaption>Fig.<sup>1</sup>  - la Deep Web.</figcaption> <!-- Leyenda de la figura -->
+          </figure> <!-- Fin de la figura -->
+        </div> <!-- Fin del contenedor de la imagen de introducción -->
+      </article> <!-- Fin del artículo de introducción -->
+
+      <article id="funciona"> <!-- Artículo 1: Cómo funciona la Deep Web -->
+        <h3>¿Cómo funciona la Deep Web?</h3> <!-- Título del artículo -->
+        <p>La Deep Web funciona porque su contenido <strong>no está enlazado ni rastreado</strong> 
+        por los motores de búsqueda tradicionales, ya sea porque está protegido con contraseña, 
+        generado de forma dinámica, o guardado en bases de datos privadas.<br><br>La parte más profunda, 
+        conocida como <em>Dark Web</em>, utiliza además una técnica 
+        llamada <u>enrutamiento cebolla</u> (onion routing): el tráfico se cifra en varias capas 
+        y pasa por distintos nodos o "relés" antes de llegar a su destino, de forma que ningún 
+        nodo conoce a la vez el origen y el destino completos de la conexión, lo que dificulta 
+        rastrear al usuario. <!-- Explicación técnica general, sin detalles operativos -->   
+      </article> <!-- Fin del artículo -->
+
+      <article id="que-es?"> <!-- Artículo 2: Qué es la Deep Web -->
+        <h3>¿Qué es la Deep Web?</h3> <!-- Título del artículo -->
+        <p>La Deep Web (o web profunda) agrupa <em>todo</em> el contenido que no está indexado 
+        por los motores de búsqueda comunes, pero que en su mayoría es completamente legal: 
+        correos electrónicos, bases de datos académicas, historiales médicos, banca en línea 
+        e intranets corporativas.</p> <!-- Explicación general de la Deep Web -->
+        <ul type="circle"> <!-- Lista de ejemplos de contenido de la Deep Web -->
+          <li>Bases de datos científicas</li> <!-- Ejemplo 1 -->
+          <li>Bandejas de correo privadas</li> <!-- Ejemplo 2 -->
+          <li>Plataformas de banca en línea</li> <!-- Ejemplo 3 -->
+          <li>Documentos internos de instituciones</li> <!-- Ejemplo 4 -->
+        </ul> <!-- Fin de la lista -->
+        <div class="imagen-deepweb"> <!-- Contenedor de la imagen de la Deep Web -->
+          <figure> <!-- Agrupa la imagen y su leyenda -->
+            <img src="recursos/iamgen2_Deepweb.jfif" alt="Computador con texto de la deep web" width="300"> <!-- Imagen representativa, con texto alternativo y tamaño definido -->
+            <figcaption>Fig.<sup>2</sup> -Computador con texto de la deep web.</figcaption> <!-- Leyenda de la figura -->
+          </figure> <!-- Fin de la figura -->
+        </div>
+      </article> <!-- Fin del artículo -->
+
+      <article id="entrar"> <!-- Artículo 3: Cómo entrar a la Deep Web -->
+        <h3>¿Cómo entrar a la Deep Web?</h3> <!-- Título del artículo -->
+        <p>La mayor parte de la Deep Web (correos, bancos, intranets) se "visita" simplemente 
+        iniciando sesión con tus credenciales en el sitio correspondiente, como cualquier 
+        página web normal.</p> <!-- Acceso a la parte legal/común de la Deep Web -->
+        <p>Para la parte más profunda (la Dark Web) se necesita un navegador especializado, 
+        como <strong>Tor Browser</strong>, descargado únicamente desde su sitio oficial 
+        (torproject.org). Este navegador permite abrir direcciones con extensión 
+        <q>.onion</q>, que no son accesibles desde un navegador convencional.</p> <!-- Explicación general del acceso -->
+        <p><strong>Advertencia:</strong> aunque el uso de Tor es legal en la mayoría de países 
+        y tiene fines legítimos (privacidad, periodismo, evitar censura), gran parte del 
+        contenido dentro de la Dark Web es ilegal y peligroso, por lo que se recomienda 
+        precaución, mantener el software actualizado y nunca compartir datos personales.</p> <!-- Nota de seguridad, sin instrucciones operativas para acceder a contenido ilegal -->
+        </article> <!-- Fin del artículo -->
+
+      <article id="caracteristicas"> <!-- Artículo 4: Características de la Deep Web -->
+        <h3>Características de la Deep Web</h3> <!-- Título del artículo -->
+        <ol> <!-- Lista ordenada con las características principales -->
+          <li>No está indexada por buscadores como Google o Bing.</li> <!-- Característica 1 -->
+          <li>Es mucho más grande que la Web superficial (se estima que representa la mayor 
+          parte de todo internet).</li> <!-- Característica 2 -->
+          <li>Gran parte de su contenido es privado y requiere autenticación (usuario y 
+          contraseña).</li> <!-- Característica 3 -->
+          <li>En su mayoría es completamente legal y de uso cotidiano (correo, banca, 
+          bases de datos).</li> <!-- Característica 4 -->
+          <li>Su parte más profunda, la Dark Web, requiere software especializado y ofrece 
+          un mayor nivel de anonimato.</li> <!-- Característica 5 -->
+          <li>El anonimato que ofrece puede usarse tanto para fines legítimos como para 
+          actividades ilegales.</li> <!-- Característica 6 -->
+        </ol> <!-- Fin de la lista ordenada -->
+      </article> <!-- Fin del artículo -->
+
+      <article id="tabla"> <!-- Artículo con la tabla comparativa, se mantiene igual -->
+        <h3>Tabla comparativa de las capas de Internet</h3> <!-- Título del artículo -->
+        <div> <!-- Contenedor genérico sin significado semántico, agrupa la tabla y su nota -->
+          <table border="1"> <!-- Inicio de la tabla comparativa -->
+            <caption>Comparación entre Web superficial, Deep Web y Dark Web</caption> <!-- Rótulo de la tabla, se coloca encima -->
+            <tr> <!-- Primera fila: cabeceras de columna -->
+              <th>Característica</th> <!-- Celda de cabecera de la primera columna -->
+              <th>Web superficial</th> <!-- Celda de cabecera -->
+              <th>Deep Web</th> <!-- Celda de cabecera -->
+              <th>Dark Web</th> <!-- Celda de cabecera -->
+            </tr> <!-- Fin de la fila de cabeceras -->
+            <tr> <!-- Segunda fila: porcentaje aproximado -->
+              <th>% aproximado del internet</th> <!-- Cabecera de fila -->
+              <td>4% o 5%</td> <!-- Celda de dato -->
+              <td>90% a 94%</td> <!-- Celda de dato -->
+              <td>Fracción de la Deep Web, estimado menos del 1% del internet</td> <!-- Celda de dato -->
+            </tr> <!-- Fin de la fila -->
+            <tr> <!-- Tercera fila: acceso -->
+              <th>Acceso</th> <!-- Cabecera de fila -->
+              <td colspan="2">Navegador normal con inicio de sesión</td> <!-- Celda que une dos columnas con colspan -->
+              <td>Software Anonimo como Tor</td> <!-- Celda de dato -->
+            </tr> <!-- Fin de la fila -->
+            <tr> <!-- Cuarta fila: legalidad, primera de dos filas fusionadas -->
+              <th>Legalidad</th> <!-- Cabecera que se une con la fila siguiente mediante rowspan -->
+              <td >Legal</td> <!-- Celda de dato -->
+              <td>Legal</td> <!-- Celda de dato -->
+              <td>Uso legítimo posible, pero con bastante contenido sensible e ilegal</td> <!-- Celda de dato -->
+            </tr> <!-- Fin de la primera fila de legalidad -->
+            
+          </table> <!-- Fin de la tabla comparativa -->
+          <p><span>Nota:</span> esta tabla resume de forma simplificada las tres capas explicadas 
+          en los artículos anteriores.</p> <!-- Nota aclaratoria, span resalta la palabra "Nota" -->
+        </div> <!-- Fin del contenedor genérico -->
+        <div id="video">
+          <h3>Video explicativo</h3> <!-- Título del video -->
+          <p>El siguiente video explica de forma resumida como entrar legalmente a la Deep Web y sus niveles de profundidad.</p> <!-- Párrafo introductorio al video -->
+          <p>Se recomienda ver el video completo para entender mejor el funcionamiento de la Deep Web
+          <figure> <!-- Agrupa el video y su leyenda -->
+            <video controls width="400"> <!-- Video con controles de reproducción y tamaño definido -->
+              <source src="recursos/video.MP4" type="video/MP4"> <!-- Fuente del video en formato mp4 -->
+              Tu navegador no soporta la etiqueta de video. <!-- Mensaje alternativo si el navegador no soporta video -->
+            </video> <!-- Fin del video -->
+            <figcaption>Fig.<sup>3</sup>  - Como entrar a la Deep Web.</figcaption> <!-- Leyenda de la figura -->
+          </figure> <!-- Fin de la figura -->
+        </div>
+        </article> <!-- Fin del artículo de la tabla -->
+
+    </section> <!-- Fin de la sección de artículos -->
+
+    <aside> <!-- Contenido lateral con enlaces a otras páginas -->
+      <h3>Más contenido</h3> <!-- Título del aside -->
+      <ul> <!-- Lista de enlaces -->
+        <li><a href="iceberg.html">Ver el Iceberg </a></li> <!-- Enlace a la página del iceberg -->
+        <li><a href="registro.html">Formulario de inscripción</a></li> <!-- Enlace a la página del formulario -->
+      </ul> <!-- Fin de la lista de enlaces -->
+    </aside> <!-- Fin del aside -->
+  </main> <!-- Fin del contenido principal -->
+
+
+  <footer id = "pie-de-pagina"><!-- Pie de página  id inmutable en css (aparece en todos los archivos)-->
+    <p> 19/09/2026 - Entrega 1 - Programación Avanzada</p> <!-- texto de pie de página -->
+    <p> Julian Estupiñan - Sergio Suarez  </p> <!-- Autores -->
+  </footer> <!-- Fin del pie de página -->
+
+</body> <!-- Fin del contenido visible -->
+</html> <!-- Fin del documento HTML -->

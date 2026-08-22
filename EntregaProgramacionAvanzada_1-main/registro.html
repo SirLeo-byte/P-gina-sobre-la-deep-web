@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- Declara que el documento es HTML5 -->
+<html lang="es" class="principal"> <!-- Etiqueta raíz del documento, idioma español -->
+<head> <!-- Inicio de la cabecera (metadatos, no visible) -->
+  <meta charset="utf-8"> <!-- Define la codificación de caracteres UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a dispositivos móviles -->
+  <title>Inscripción</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="estilo.css"> <!-- Enlaza la hoja de estilos externa -->
+</head> <!-- Fin de la cabecera -->
+<body> <!-- Inicio del contenido visible de la página -->
+
+  <header class = "cabecera"> <!-- Cabecera visual de la página -->
+    <div class="logo"> <!-- Contenedor del logo -->
+      <img src="recursos/logo.jpg" alt="Logo de la página" width="210"> <!-- Imagen del logo, con texto alternativo y tamaño definido -->
+    </div> <!-- Fin del contenedor del logo -->
+    <h1>Formulario de Inscripción</h1> <!-- Título principal -->
+    <h3>Simulación de registro </h3> <!-- Subtítulo -->
+  </header> <!-- Fin de la cabecera visual -->
+
+  <main> <!-- Contenido principal de la página -->
+    <section class = "form"> <!-- Sección que contiene el formulario -->
+      <form action="#" method="post" autocomplete="on" novalidate enctype="application/x-www-form-urlencoded"> <!-- Formulario simulado, con atributos de comportamiento explicados en las diapositivas -->
+
+        <fieldset class="datos-personales"> <!-- Agrupa los campos de datos personales -->
+          <legend>Datos personales</legend> <!-- Título del grupo de campos -->
+          <p> <!-- Párrafo que contiene el campo Nombre -->
+            <label>Nombre: <input type="text" name="nombre" placeholder="Escribe tu nombre" required></label> <!-- Campo de texto obligatorio -->
+          </p> <!-- Fin del párrafo -->
+          <p> <!-- Párrafo que contiene el campo Correo -->
+            <label>Correo electrónico: <input type="email" name="correo" placeholder="ejemplo@correo.com" required></label> <!-- Campo de correo obligatorio -->
+          </p> <!-- Fin del párrafo -->
+          <p> <!-- Párrafo que contiene el campo Contraseña -->
+            <label>Contraseña: <input type="password" name="clave" required></label> <!-- Campo de contraseña obligatorio -->
+          </p> <!-- Fin del párrafo -->
+          <p> <!-- Párrafo que contiene el campo Sitio web -->
+            <label>Sitio web personal: <input type="url" name="sitio" placeholder="https://tuweb.com"></label> <!-- Campo de tipo url -->
+          </p> <!-- Fin del párrafo -->
+        </fieldset> <!-- Fin del grupo de datos personales -->
+
+        <fieldset class="datos-preferencias"> <!-- Agrupa los campos de preferencias -->
+          <legend>Preferencias</legend> <!-- Título del grupo de campos -->
+          <p> <!-- Párrafo que contiene la lista desplegable de tema -->
+            <label>Tema de interés: <!-- Etiqueta del campo select -->
+              <select name="tema"> <!-- Lista desplegable de temas -->
+                <option value="seguridad">Ciberseguridad</option> <!-- Opción 1 -->
+                <option value="privacidad">Privacidad en línea</option> <!-- Opción 2 -->
+                <option value="redes">Redes anónimas</option> <!-- Opción 3 -->
+              </select> <!-- Fin de la lista desplegable -->
+            </label> <!-- Fin de la etiqueta -->
+          </p> <!-- Fin del párrafo -->
+          <p> <!-- Párrafo que contiene el select con optgroup para el país -->
+            <label>País: <!-- Etiqueta del campo select con grupos -->
+              <select name="pais"> <!-- Lista desplegable agrupada -->
+                <option value="xx">Elija un país...</option> <!-- Opción por defecto -->
+                <optgroup label="América"> <!-- Grupo de opciones de América -->
+                  <option value="co">Colombia</option> <!-- Opción Colombia -->
+                  <option value="mx">México</option> <!-- Opción México -->
+                </optgroup> <!-- Fin del grupo América -->
+                <optgroup label="Europa"> <!-- Grupo de opciones de Europa -->
+                  <option value="es">España</option> <!-- Opción España -->
+                  <option value="fr">Francia</option> <!-- Opción Francia -->
+                </optgroup> <!-- Fin del grupo Europa -->
+              </select> <!-- Fin de la lista desplegable -->
+            </label> <!-- Fin de la etiqueta -->
+          </p> <!-- Fin del párrafo -->
+          <p> <!-- Párrafo que contiene el área de comentarios -->
+            <label>Comentarios: <!-- Etiqueta del área de texto -->
+              <textarea name="comentarios" cols="40" rows="4" minlength="5" maxlength="200" placeholder="Escribe tu opinión"></textarea> <!-- Área de texto de varias líneas -->
+            </label> <!-- Fin de la etiqueta -->
+          </p> <!-- Fin del párrafo -->
+          <p> <!-- Párrafo que contiene el checkbox -->
+            <label><input type="checkbox" name="condiciones" required> Acepto los términos y condiciones</label> <!-- Casilla de aceptación obligatoria -->
+          </p> <!-- Fin del párrafo -->
+        </fieldset> <!-- Fin del grupo de preferencias -->
+
+        <p> <!-- Párrafo que contiene los botones de acción -->
+          <input type="submit" value="Inscribirme"> <!-- Botón que envía el formulario -->
+          <input type="reset" value="Borrar"> <!-- Botón que reinicia el formulario -->
+        </p> <!-- Fin del párrafo de botones -->
+
+      </form> <!-- Fin del formulario -->
+    </section> <!-- Fin de la sección -->
+
+    <aside> <!-- Contenido lateral con enlaces a otras páginas -->
+      <h3>Más contenido</h3> <!-- Título del aside -->
+      <ul> <!-- Lista de enlaces -->
+        <li><a href="Principal.html">Volver al inicio</a></li> <!-- Enlace de regreso a index.html -->
+        <li><a href="iceberg.html">Ver el Iceberg </a></li> <!-- Enlace a la página del iceberg -->
+      </ul> <!-- Fin de la lista de enlaces -->
+    </aside> <!-- Fin del aside -->
+  </main> <!-- Fin del contenido principal -->
+
+  <footer id = "pie-de-pagina"> <!-- Pie de página  id inmutable en css (aparece en todos los archivos)-->
+   <p> 19/09/2026 - Entrega 1 - Programación Avanzada</p> <!-- texto de pie de página -->
+    <p> Julian Estupinan - Sergio Suarez  </p> <!-- Autores -->
+  </footer> <!-- Fin del pie de página -->
+
+</body> <!-- Fin del contenido visible -->
+</html> <!-- Fin del documento HTML -->

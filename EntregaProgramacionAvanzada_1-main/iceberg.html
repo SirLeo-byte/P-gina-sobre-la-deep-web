@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- Declara que el documento es HTML5 -->
+<html lang="es" class="principal"> <!-- Etiqueta raíz del documento, idioma español -->
+<head> <!-- Inicio de la cabecera (metadatos, no visible) -->
+  <meta charset="utf-8"> <!-- Define la codificación de caracteres UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a dispositivos móviles -->
+  <title>Iceberg</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="estilo.css"> <!-- para Enlaza la hoja de estilos externa -->
+</head> <!-- Fin de la cabecera -->
+<body> <!-- Inicio del contenido visible de la página -->
+
+  <header class = "cabecera"> <!-- Cabecera visual de la página -->
+    <div class="logo"> <!-- Contenedor del logo -->
+      <img src="recursos/logo.jpg" alt="Logo de la página" width="210"> <!-- Imagen del logo, con texto alternativo y tamaño definido -->
+    </div> <!-- Fin del contenedor del logo -->
+    <h1>El Iceberg de Internet</h1> <!-- Título principal -->
+    <h3>Representación vertical de las capas de la red</h3> <!-- Subtítulo -->
+  </header> <!-- Fin de la cabecera visual -->
+
+  <main> <!-- Contenido principal de la página -->
+    <section class="contenido-iceberg"> <!-- Sección que contiene la figura del iceberg -->
+      <figure> <!-- Agrupa la imagen/gráfico junto con su descripción -->
+        <div class="iceberg-container"> <!-- Contenedor que apila las tres capas verticalmente -->
+          <div class="capa-superficial"> <!-- Capa superior: Web superficial -->
+            <h3>Web Superficial</h3> <!-- Título de la capa -->
+            <p>La <b>Web superficial</b> es el conjunto de sitios, páginas y recursos de internet 
+              indexados por los motores de búsqueda tradicionales y accesibles 
+              para cualquier usuario mediante navegadores web comunes, sin necesidad de 
+              autenticación, software especial o configuraciones de acceso adicionales.</p> <!-- Descripción breve -->
+          </div> <!-- Fin de la capa superficial -->
+          <div class="capa-intermedia"> <!-- Capa media: Deep Web -->
+            <h3>Deep Web</h3> <!-- Título de la capa -->
+            <p>La <b>Deep Web</b> es el conjunto de contenidos, bases de datos y páginas
+               de internet que no están indexados por los motores de búsqueda tradicionales debido a 
+               barreras de seguridad, autenticación o restricciones de acceso. A diferencia de la web
+                superficial, no puedes llegar a este contenido mediante una búsqueda en Google, aunque 
+                se accede utilizando navegadores comunes y bajo los mismos 
+                protocolos estándar de red (HTTP/HTTPS).</p> <!-- Descripción breve -->
+          </div> <!-- Fin de la capa profunda -->
+          <div class="capa-profunda"> <!-- Capa inferior: Dark Web -->
+            <h3>Dark Web</h3> <!-- Título de la capa -->
+            <p>Pequeña fracción de la Deep Web accesible solo con software de anonimato 
+            (como Tor). Usos legítimos: periodismo, protección de identidad en zonas de 
+            censura. También asociada a actividades ilegales, por lo que su acceso conlleva 
+            riesgos legales y de seguridad importantes.</p> <!-- Descripción breve -->
+          </div> <!-- Fin de la capa profunda -->
+        </div> <!-- Fin del contenedor del iceberg -->
+
+        <img src="recursos/imagen3_Deepweb.jfif" alt="Representación del iceberg de internet" width="400" class="iceberg-imagen"> <!-- Imagen representativa del iceberg, con texto alternativo y tamaño definido -->
+        <figcaption class="iceberg-leyenda">Fig.<sub>4</sub> - Capas de internet según su nivel de indexación y acceso.</figcaption> <!-- Leyenda de la figura -->
+        <audio controls class="iceberg-audio"> <!-- Reproductor de audio con controles visibles -->
+          <source src="recursos/audio.MP3" type="audio/MP3"> <!-- Fuente del audio en formato mp3 -->
+        </audio> <!-- Fin del reproductor de audio -->
+  
+      </figure> <!-- Fin de la figura -->
+    </section> <!-- Fin de la sección -->
+
+    <aside> <!-- Contenido lateral con enlaces a otras páginas -->
+      <h3>Más contenido</h3> <!-- Título del aside -->
+      <ul> <!-- Lista de enlaces -->
+        <li><a href="Principal.html">Volver al inicio</a></li> <!-- Enlace de regreso a principal.html -->
+        <li><a href="registro.html">Formulario de inscripción</a></li> <!-- Enlace a la página del formulario -->
+      </ul> <!-- Fin de la lista de enlaces -->
+    </aside> <!-- Fin del aside -->
+  </main> <!-- Fin del contenido principal -->
+
+  <footer id = "pie-de-pagina"> <!-- Pie de página con id inmutable en css (aparece en todos los archivos) -->
+    <p> 19/09/2026 - Entrega 1 - Programación Avanzada</p> <!-- texto de pie de página -->
+    <p> Julian Estupinan - Sergio Suarez  </p> <!-- Autores -->
+  </footer> <!-- Fin del pie de página -->
+
+</body> <!-- Fin del contenido visible -->
+</html> <!-- Fin del documento HTML -->

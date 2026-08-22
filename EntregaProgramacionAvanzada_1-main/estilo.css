@@ -1,0 +1,203 @@
+html{
+    background-color: rgb(117, 155, 207); /* Color de fondo para toda la página*/
+     color:  black; /* Color de texto para toda la página */
+}
+
+.cabecera{
+    background-color: #191c24; /* Color de fondo blanco para la cabecera */
+    border: 1px solid black; /* Borde negro de 1 píxel */
+    border-radius: 10px;
+    text-align: center; /* Alineación centrada del contenido de la cabecera */
+    padding: 5px; /* Espaciado interno de la cabecera */
+    color: #00ff66; /* Color de texto verde */
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.6); /* Sombra de texto verde con un efecto de resplandor */
+    text-transform: uppercase; /* Transformación de texto a mayúsculas */
+}
+
+.principal {
+    background-color: WHITE; /* Color de fondo blanco para la sección principal */
+
+}
+
+#pie-de-pagina {
+    background-color: #191c24; /* Color de fondo blanco para el pie de página */
+    text-align: center; /* Alineación centrada del contenido del pie de página */
+    padding: 5px; /* Espaciado interno del pie de página */
+    color: #00ff66; /* Color de texto verde */
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.6); /* Sombra de texto verde con un efecto de resplandor */
+    border: 1px solid black; /* Borde negro de 1 píxel */
+    border-radius: 10px;
+}
+
+#contenido-pagina {
+    background-color: white; /* Color de fondo blanco para la sección principal */
+    margin : 40px; /* Margen de 20 píxeles alrededor de la sección principal */ 
+}
+
+.contenido-iceberg{
+    border: 1px solid black; /* Borde negro de 1 píxel */
+}
+
+.iceberg-container {
+    display: flex; /* Utiliza un contenedor flexible para organizar los elementos al centro*/
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top: 20px; /* Margen superior de 20 píxeles */
+    .capa-superficial {
+        background-color: #60796a; /* Color de fondo verde para la capa superficial */
+        color: #ffffff; /* Color de texto blanco para la capa superficial */
+        width: 80%; /* Ancho del 80% del contenedor */
+        padding: 20px; /* Espaciado interno de 20 píxeles */
+        text-align: center; /* Alineación centrada del contenido */
+        box-shadow: 0 0 20px rgba(167, 254, 202, 0.6); /* Sombra de texto verde con un efecto de resplandor */
+    }
+    .capa-intermedia {
+        background-color: #232924; /* Color de fondo verde más oscuro para la capa intermedia */
+        color: #ffffff; /* Color de texto blanco para la capa intermedia */
+        width: 60%; /* Ancho del 60% del contenedor */
+        padding: 20px; /* Espaciado interno de 20 píxeles */
+        text-align: center; /* Alineación centrada del contenido */
+        box-shadow: 0 0 20px rgba(167, 254, 202, 0.6); /* Sombra de texto verde con un efecto de resplandor */
+    }
+    .capa-profunda {
+        background-color: #0c0c0c; /* Color de fondo verde más oscuro para la capa oscura */
+        color: #ffffff; /* Color de texto blanco para la capa oscura */
+        width: 40%; /* Ancho del 40% del contenedor */
+        padding: 20px; /* Espaciado interno de 20 píxeles */
+        text-align: center; /* Alineación centrada del contenido */
+        margin-bottom: 50px; /* Margen inferior de 20 píxeles */
+        box-shadow: 0 0 20px rgba(167, 254, 202, 0.6); /* Sombra de texto verde con un efecto de resplandor */
+    }  
+}
+
+.iceberg-imagen {
+    display: block; /* Hace que la imagen sea un bloque para centrarla */
+    margin: 20px auto; /* Centra la imagen horizontalmente y agrega un margen superior e inferior de 20 píxeles */
+    border-radius: 10px; /* Bordes redondeados de 10 píxeles */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra alrededor de la imagen */
+}
+
+.iceberg-leyenda {
+    font-style: italic; /* Texto en cursiva */
+    text-align: center; /* Alineación centrada */
+}
+
+.iceberg-audio {
+    display: block; /* Hace que el reproductor de audio sea un bloque para centrarlo */
+    margin: 20px auto; /* Centra el reproductor de audio horizontalmente y agrega un margen superior e inferior de 20 píxeles */
+}
+
+.datos-personales {
+    background-color: #f0f0f0; /* Color de fondo gris claro para el fieldset */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno de 10 píxeles */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+    margin: 20px; /* Margen de 20 píxeles */
+    
+}
+
+.datos-preferencias {
+    background-color: #f0f0f0; /* Color de fondo gris claro para el fieldset */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno de 10 píxeles */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+    margin: 20px; /* Margen de 20 píxeles */
+}
+nav {
+    background-color: rgb(181, 170, 170); /* Color de fondo blanco para la barra de navegación */
+    padding: 10px; /* Espaciado interno de 10 píxeles */
+    text-align: center; /* Alineación centrada del contenido de la barra de navegación */
+    border-radius: 10px; /* Bordes redondeados de 10 píxeles */
+    .menu{
+        display: flex; /* Utiliza un contenedor flexible para organizar los elementos del menú */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        gap: 10px; /* Espacio de 10 píxeles entre los elementos del menú */
+        font-size: 18px; /* Tamaño de fuente de 18 píxeles para los enlaces del menú */
+        font : "Lato", sans-serif; /* Fuente Lato para los enlaces del menú */
+        background-color: rgba(157, 160, 132, 0.816); /* Color de fondo negro para los enlaces */
+        border-radius: 10px; /* Esquinas redondeadas */
+        border: 1px solid black; /* Borde negro */
+        margin: 10px 0;
+    }
+    border: 1px solid black; /* Borde negro de 1 píxel */
+    
+}
+
+nav a { /* Sección para los enlaces del menú */
+  color: black; /*color de letra*/
+  margin:0 30px; /*margen de 30px izquierdo y derecho*/
+  text-decoration: none; /*Sin decoración en los textos*/
+  font-weight: bold; /*fuente de la letra*/
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: gray;
+}
+
+
+.form{ /* Estilo para el contenedor del formulario */
+    border-radius: 10px;
+    border: 1px solid black;
+}
+section {
+  flex: 3; /* Ocupa 3 partes del espacio disponible */
+  background-color: #f0f0f0; /* Define el color de fondo */
+  padding: 20px; /* Agrega espacio interno de 20px */
+  border-radius: 10px; /* Redondea las esquinas */
+}
+
+article {
+  background-color: #f0f0f0; /* Define el fondo del artículo */
+  margin-bottom: 15px; /* Agrega 15px de espacio debajo */
+  padding: 15px; /* Agrega espacio interno de 15px */
+  border-radius: 8px; /* Redondea las esquinas del artículo */
+  border: 1px solid black;
+}
+
+aside {
+  flex: 1; /* Ocupa 1 parte del espacio disponible */
+  background-color: #1b263b; /* Define el color de fondo */
+  padding: 15px; /* Agrega espacio interno de 15px */
+  border-radius: 10px; /* Redondea las esquinas */
+  height: fit-content; /* Ajusta la altura al contenido */
+}
+
+aside h3 {
+  text-align: center; /* Centra el texto del título */
+  color: white;
+}
+
+aside ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el espacio interno de la lista */
+}
+
+aside li {
+  margin: 10px 0; /* Agrega 10px de espacio arriba y abajo */
+}
+
+aside a {
+  display: block; /* Hace que el enlace ocupe todo el ancho */
+  background-color: #415a77; /* Define el fondo del enlace */
+  color: white; /* Define el color del texto */
+  text-align: center; /* Centra el texto */
+  padding: 10px; /* Agrega espacio interno de 10px */
+  border-radius: 8px; /* Redondea las esquinas */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+aside a:hover { /* Cambia el estilo del enlace al pasar el mouse */
+  background-color: #778da9; /* Cambia el fondo al pasar el mouse */
+}
+
+main {
+  display: flex; /* Coloca los elementos en fila */
+  gap: 20px; /* Deja 20px de separación entre elementos */
+  padding: 20px; /* Agrega 20px de espacio interno */
+}
+
+#tabla th, #tabla td {
+  border: 1px solid black;  
+  padding: 8px 12px;  
+}
