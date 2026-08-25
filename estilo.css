@@ -6,7 +6,7 @@ html{
 .cabecera{
     background-color: #191c24; /* Color de fondo blanco para la cabecera */
     border: 1px solid black; /* Borde negro de 1 píxel */
-    border-radius: 10px;
+    border-radius: 10px; /* Bordes redondeados */
     text-align: center; /* Alineación centrada del contenido de la cabecera */
     padding: 5px; /* Espaciado interno de la cabecera */
     color: #00ff66; /* Color de texto verde */
@@ -20,7 +20,7 @@ html{
 }
 
 #pie-de-pagina {
-    background-color: #191c24; /* Color de fondo blanco para el pie de página */
+    background-color: #191c24; /* Color de fondo negro para el pie de página */
     text-align: center; /* Alineación centrada del contenido del pie de página */
     padding: 5px; /* Espaciado interno del pie de página */
     color: #00ff66; /* Color de texto verde */
@@ -46,7 +46,7 @@ html{
     .capa-superficial {
         background-color: #60796a; /* Color de fondo verde para la capa superficial */
         color: #ffffff; /* Color de texto blanco para la capa superficial */
-        width: 80%; /* Ancho del 80% del contenedor */
+        width: 80%; /* Ancho del 80% xdel contenedor */
         padding: 20px; /* Espaciado interno de 20 píxeles */
         text-align: center; /* Alineación centrada del contenido */
         box-shadow: 0 0 20px rgba(167, 254, 202, 0.6); /* Sombra de texto verde con un efecto de resplandor */
@@ -103,6 +103,7 @@ html{
     margin-bottom: 20px; /* Margen inferior de 20 píxeles */
     margin: 20px; /* Margen de 20 píxeles */
 }
+
 nav {
     background-color: rgb(181, 170, 170); /* Color de fondo blanco para la barra de navegación */
     padding: 10px; /* Espaciado interno de 10 píxeles */
