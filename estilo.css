@@ -185,6 +185,7 @@ aside a {
   text-align: center; /* Centra el texto */
   padding: 10px; /* Agrega espacio interno de 10px */
   border-radius: 8px; /* Redondea las esquinas */
+  border: 1px solid #0c0c0c;
   text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
